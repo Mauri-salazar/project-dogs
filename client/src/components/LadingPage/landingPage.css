@@ -1,0 +1,56 @@
+.landing {
+  background-image: url('../../assets/./images/landinPage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+
+
+.title {
+  border-radius: 32px;
+  width: content;
+  height: fit-content;
+  margin: auto 10px auto 40%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  text-align: left;
+  color: #ffffff;
+}
+
+.title h1 {
+  font-size: calc(2em + 1vw);
+  font-weight: 700;
+  color: #733ca9;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 15px 5px;
+  text-shadow: white 1px 1px 1px;
+
+}
+
+.title h2 {
+  font-size: calc(1em + 1vw);
+  font-weight: 700;
+  color: #443d4b;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 15px 15px 15px 0;
+}
+
+.btn {
+  background-color: #733ca9;
+  border-radius: 24px;
+  margin: 5px 5px 25px 5px;
+  text-decoration: none;
+  padding: 2px 15px;
+  color: aliceblue;
+  width: fit-content;
+}
+.btn:hover {
+  box-shadow: 0 0 40px #ab0bab95 inset
+}

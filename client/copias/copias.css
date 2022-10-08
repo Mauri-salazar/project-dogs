@@ -1,0 +1,87 @@
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 160px;
+  margin-left: 45vw;
+  margin-top: 250px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: 0 0 40px #ab0bab95 inset
+}
+
+/* search
+.search {
+  text-align: center;
+  margin-top: 10px;
+  height: fit-content;
+  w
+
+
+Link btn crear perro
+.create{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 170px;
+  border-radius: 15px;
+  background-color: #8c8484;
+  color: #030000;
+  text-decoration: none;
+}
+.create:hover{
+  box-shadow: 0 0 40px #030000 inset
+}
+
+btn volver a cargar perros
+
+.btnDogs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 170px;
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: #8c8484;
+  color: #030000;
+  text-decoration: none;
+}
+.btnDogs:hover{
+  box-shadow: 0 0 40px #030000 inset
+}
+
+card
+
+.contCards .card {
+  border-radius: 30px;
+  background: linear-gradient(rgb(218, 161, 205), rgb(246, 243, 236));
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}

@@ -1,0 +1,30 @@
+.search {
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgb(33, 32, 35) 0%,rgb(83, 80, 89) 55%, rgb(150, 138, 138) 67%);
+  margin-top: calc(1em + 6vw);
+  display: flex;
+  font-family: 'Yanone Kaffeesatz', sans-serif;  border-radius: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+
+.divSearch button {
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  font-size: calc(1em + 1vw);
+  margin: 8px 15px;
+  font-weight: 500;
+}
+
+.divSearch button:hover {
+    box-shadow: 0 0 40px #ab0bab95 inset
+}
+
+.input {
+  font-size: calc(1em + 0.5vw);
+  background-color: rgba(255, 255, 255, 0.996);
+  border: 1px solid #6633CC;
+  border-radius: 8px;
+}

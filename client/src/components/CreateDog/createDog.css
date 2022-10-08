@@ -1,0 +1,135 @@
+.create-dog {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.from-conteiner {
+  flex: 2;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.from-conteiner h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #733ca9;
+  text-align: center;
+}
+
+.from-conteiner .inpt-cont {
+  position: relative;
+}
+
+.from-conteiner .inpt-cont input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #733ca9;
+  outline: none;
+  background: transparent;
+  filter: hue-rotate(270deg);
+}
+
+.from-conteiner .inpt-cont input::placeholder {
+  color: #733ca9;
+}
+
+.from-conteiner .inpt-cont label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #733ca9;
+  pointer-events: none;
+  transition: .5s;
+  filter: hue-rotate(270deg);
+}
+
+.from-conteiner .inpt-cont h5 {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #733ca9;
+  pointer-events: none;
+  transition: .5s;
+  filter: hue-rotate(270deg);
+}
+/* .from-conteiner .inpt-cont input:focus ~ label,
+.from-conteiner .inpt-cont input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #733ca9;
+  font-size: 12px;
+} */
+
+.from-conteiner form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px #733ca9;
+  color: #733ca9;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.from-conteiner a:hover {
+  color: rgb(161, 161, 161);
+  border-radius: 5px;
+  box-shadow: 0 0 20px #733ca9
+}
+
+.from-conteiner .error {
+  font-size: 0.7rem;
+  color: #733ca9;
+  box-shadow: inset;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+.select {
+  background-color: #733ca9;
+  color: aliceblue;
+}
+
+.tmp {background-color: #733ca9;
+  display: flex;
+  margin: 40px;
+}
+
+
+.btn-create {
+  background-color: #733ca9;
+  border-radius: 24px;
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+  padding: 12px 10px 15px;
+  color: aliceblue;
+}
+.btn-create:hover {
+  box-shadow: 0 0 40px #ab0bab95 inset
+}
+
+.btn-home {
+  background-color: #733ca9;
+  border-radius: 24px;
+  margin: 5px 5px 25px 5px;
+  text-decoration: none;
+  padding: 12px 10px 15px;
+  color: aliceblue;
+}
+.btn-home:hover {
+  box-shadow: 0 0 40px #ab0bab95 inset
+}
