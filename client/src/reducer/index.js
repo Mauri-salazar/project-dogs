@@ -53,7 +53,7 @@ const RootReducer = ( state = initialState , action ) => {
 
     case FILTER_DOGS_BY_TEMPERAMENT:
       const AllDogs= state.AllDogs;
-      const DogsFilter = action.payload === 'All' ? AllDogs : AllDogs.filter( (el) => el.temperament.includes(action.payload) );
+      const DogsFilter = action.payload === 'All' ? AllDogs : AllDogs.filter( (el) => el.temperament && el.temperament.split(", ").find((e) => e === action.payload) );
       return {
         ...state,
         dogs: DogsFilter,

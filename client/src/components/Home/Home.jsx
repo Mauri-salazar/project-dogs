@@ -68,20 +68,16 @@ export const Home = () => {
 
 return (
   <div className='conteiner'>
-      <SearchBar />
-      <div className='selcets' >
-          <h3>alphabetical</h3>
-              <select onChange={ (e) => handleSortAlphabet(e) }>
-                  <option value="asc">Asecendente</option>
-                  <option value="desc">Descendentes</option>
+      <div className='cont-select'>
+              <select className='select' onChange={ (e) => handleSortAlphabet(e) }>
+                  <option value="asc">A - Z</option>
+                  <option value="desc">Z - A</option>
               </select>
-          <h3>weight</h3>
-              <select onChange={ (e) => handleSortRating(e) }>
-                  <option value="weigthAsc">Asecendente</option>
-                  <option value="weigthDesc">Descendentes</option>
+              <select className='select' onChange={ (e) => handleSortRating(e) }>
+                  <option value="weigthAsc">Mayor peso</option>
+                  <option value="weigthDesc">Menor peso</option>
               </select>
-          <h3>Temperament</h3>
-              <select onChange={ (e) => handleFilterStatus(e) }>
+              <select className='select' onChange={ (e) => handleFilterStatus(e) }>
                   <option value="All">All Genres</option>
                   <option value="Playful">Playful</option>
                   <option value="Dignified">Dignified</option>
@@ -103,20 +99,22 @@ return (
                   <option value="Adaptable">Adaptable</option>
                   <option value="Bright">Bright</option>
               </select>
-          <select onChange={ (e) => handleFilterDogsDb(e) }>
+          <select className='select' onChange={ (e) => handleFilterDogsDb(e) }>
                 <option value='All'>Todos</option>
-                <option value='api'>From API</option>
                 <option value='Created'>From DB</option>
           </select>
       </div>
+      <SearchBar />
       <Paginated
         DogsPage={ DogsPage }
         AllDogs={ AllDogs.length }
         paguinado={ paguinado }
       />
-      {
-        currentDogs.map(renderDogs)
-      }
+      <div>
+        {
+          currentDogs.map(renderDogs)
+        }
+      </div>
   </div>
   );
 };

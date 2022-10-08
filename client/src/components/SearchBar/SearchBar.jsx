@@ -33,12 +33,12 @@ export const SearchBar = () => {
             <button
               type='submit'
               onClick={ (e) => handleButtonClick(e) }
-              className='btnHome'
+              className='btn-'
             >
-              Home
+              volver
             </button>
             <Link to={'/createDog'}>
-              <button className='btnCreate'>Create Dog</button>
+              <button className='btn-'>Crear Mascota</button>
             </Link>
             <input
               type='text'
@@ -46,7 +46,7 @@ export const SearchBar = () => {
               className='input'
               onChange={(e) => handleInputChange(e)}
             />
-            <button type='submit' onClick={ (e) => handleSubmit(e)}>Buscar</button>
+            <button className='btn-' type='submit' onClick={ (e) => handleSubmit(e)}>Buscar</button>
         </div>
     </div>
   )

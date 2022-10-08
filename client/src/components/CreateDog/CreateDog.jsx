@@ -130,7 +130,7 @@ export const CreateDog = () => {
     return(
         <div className='create-dog'>
             <div className='from-conteiner'>
-                <h1>Crea tu perro</h1>
+                <h1>Crea Tu Mascota</h1>
                 <form>
                     <div className='inpt-cont'>
                         <h5>Nombre</h5>
@@ -253,14 +253,14 @@ export const CreateDog = () => {
                       <p></p>
                       <p></p>
                       <p></p>
-                      <button className='btn-home'>Home</button>
+                      <button className='btn-home'>Volver</button>
                 </Link>
                 <Link to='#' onClick={ (e) => handleSubmit(e)}>
                      <p></p>
                      <p></p>
                      <p></p>
                      <p></p>
-                     <button className='btn-create'>Crear Perro</button>
+                     <button className='btn-create'>Crear Mascota</button>
                 </Link>
             </div>
         </div>

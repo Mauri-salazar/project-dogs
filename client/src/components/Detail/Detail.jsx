@@ -41,13 +41,13 @@ export const Detail = () => {
                     <p>Max: {dogDetail.life_time_max} years</p>
                 </div>
                 <h2>Temperamentos</h2>
-                <p>{!dogDetail.createInDb ? dogDetail.temperament :  dogDetail.Temperaments.map( (e) => e.name + " ")}</p>
+                <p>{!dogDetail.createInDb ? dogDetail.temperament :  dogDetail.Temperaments?.map( (e) => e.name + " ")}</p>
             </div>
         </div>
         }
       <div className='cont-btn'>
         <Link to='/home'>
-            <button className='btn-home'>Home</button>
+            <button className='btn-home'>volver</button>
         </Link>
       </div>
     </div>

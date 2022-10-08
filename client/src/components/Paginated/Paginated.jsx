@@ -16,7 +16,7 @@ export const Paginated = ({ DogsPage, AllDogs, paguinado }) => {
           pageNumber && pageNumber.map(number => {
             return (
               <li className="number" key={number}>
-                <button onClick={() => paguinado(number)}>{number}</button>
+                <p className="cont-number" onClick={() => paguinado(number)}>{number}</p>
               </li>
             );
           })

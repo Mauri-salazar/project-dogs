@@ -7,7 +7,7 @@ export const Card = ({ name , image , id}) => {
     <div className="contCards">
       <div  className="card">
         <Link to={`/detail/${id}`}>
-          <p>{name}</p>
+          <h3 className="title-card">{name}</h3>
           <img src={image} alt='Not found' className="img"/>
         </Link>
       </div>
