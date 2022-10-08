@@ -110,6 +110,7 @@ export const CreateDog = () => {
         } else {
             e.preventDefault();
             dispatch(postCreateDog(input));
+            alert('Perro creado');
             console.log(input);
             setInput({
                 name: "",

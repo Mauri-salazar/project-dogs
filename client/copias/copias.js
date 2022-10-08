@@ -43,3 +43,4 @@ const  validate = (input) => {
 
 //errors.name === "" || errors.height_min === "" || errors.height_max === "" || errors.weight_min === ""
  //            || errors.weight_max === "" || errors.life_time_min === "" || errors.life_time_max || "" || errors.temperament === 0
+

@@ -1,3 +1,4 @@
+const { where } = require('sequelize');
 const { Dog , Temper } = require('../db');
 
 const PostDog = async (req,res) => {
@@ -35,7 +36,9 @@ const PostDog = async (req,res) => {
       life_time_min,
       image,
     });
-    const createdTemperament = await Temper.create({name: temperament})
+    const createdTemperament = await Temper.findAll(
+      { where: {name: temperament}
+    });
     console.log(dogCreated, createdTemperament)
     dogCreated.addTemper(createdTemperament);
     res.status(200).send("El Perrito ha sido creado con exito");
