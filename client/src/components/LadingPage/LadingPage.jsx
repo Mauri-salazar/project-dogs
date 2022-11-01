@@ -6,13 +6,15 @@ import './landingPage.css';
 export const LandingPage = () => {
   return (
     <div className='landing'>
-      <div className='title'>
-        <h1>Welcomens</h1>
-        <h2>Project Dogs</h2>
-        <Link to='/home'>
-            <button className='btn'>Enter</button>
-        </Link>
+      <div className='cont-title'>
+          <h1>Bienvenidos</h1>
+          <h4>Tus Mascotas</h4>
       </div>
+      <div className='btn-cont'>
+          <Link to='/home'>
+            <button className='btn'>Inicio</button>
+          </Link>
+    </div>
    </div>
   );
 };

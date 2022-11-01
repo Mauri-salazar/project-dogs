@@ -4,13 +4,13 @@
 
 .card {
   height: 430px;
-  width: 330px;
+  width: 340px;
   display: block;
-  margin: auto;
+  margin-left: 60px;
   margin-top: 50px;
   border-radius: 15px;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 10px #e60073,
-  0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073;
+  box-shadow: 0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
 }
 .card:hover {
   transform: scale(1.02);
@@ -27,12 +27,14 @@
 } */
 
 .title-card {
-  color: #e60073;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 25px;
   margin-block-start: 10px;
   margin-block-end: 10px;
-  margin: 5px
+  margin: 5px;
+  text-shadow:0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
 }
 
 .img {

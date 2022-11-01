@@ -1,4 +1,3 @@
-const { where } = require('sequelize');
 const { Dog , Temper } = require('../db');
 
 const PostDog = async (req,res) => {
@@ -37,7 +36,7 @@ const PostDog = async (req,res) => {
       image,
     });
     const createdTemperament = await Temper.findAll(
-      { where: {name: temperament}
+      { where: { name: temperament }
     });
     console.log(dogCreated, createdTemperament)
     dogCreated.addTemper(createdTemperament);

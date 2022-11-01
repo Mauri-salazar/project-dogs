@@ -41,7 +41,7 @@ const  validate = (input) => {
     if (!input.image){
         errors.image = 'Se requiere una imagen ';
     }
-    if (input.temperament < 1 ){
+    if (input.temperament < 1){
         errors.temperament = 'Se requieren  Temperamentos';
     }
     return errors;
@@ -51,7 +51,7 @@ export const CreateDog = () => {
 
     const dispatch = useDispatch()
     const navigate = useNavigate();
-    const temperaments = useSelector((state)=> state.temperaments)
+    const temperaments = useSelector((state)=> state.temperaments);
 
     const[input, setInput] = useState({
         name: "",
@@ -85,6 +85,7 @@ export const CreateDog = () => {
     };
 
     const handleSelect = (e) => {
+        if(input.temperament.length > 0 && input.temperament.indexOf(e.target.value) !== -1) return;
         setInput({
             ...input,
             temperament: [...input.temperament,e.target.value]
@@ -110,7 +111,7 @@ export const CreateDog = () => {
         } else {
             e.preventDefault();
             dispatch(postCreateDog(input));
-            alert('Perro creado');
+            alert('Mascota creada');
             console.log(input);
             setInput({
                 name: "",

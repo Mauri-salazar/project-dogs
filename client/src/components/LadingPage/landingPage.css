@@ -1,56 +1,63 @@
 .landing {
-  background-image: url('../../assets/./images/landinPage.jpg');
+  background-image: url('../../assets/./images/myImage.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
   flex-direction: column;
   text-decoration: none;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+/* height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover; */
 
 
-.title {
+.cont-title {
   border-radius: 32px;
-  width: content;
-  height: fit-content;
-  margin: auto 10px auto 40%;
+  margin: auto 10px auto 20%;
   display: flex;
   flex-direction: column;
   z-index: 10;
   text-align: left;
-  color: #ffffff;
+  color: #fff;
 }
 
-.title h1 {
-  font-size: calc(2em + 1vw);
-  font-weight: 700;
-  color: #733ca9;
+.cont-title h1 {
+  font-size: calc(5em + 1vw);
+  color: #fff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin: 15px 5px;
-  text-shadow: white 1px 1px 1px;
+  margin-top: 250px;
+  text-shadow:0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;;
 
 }
 
-.title h2 {
-  font-size: calc(1em + 1vw);
-  font-weight: 700;
-  color: #443d4b;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin: 15px 15px 15px 0;
+.cont-title h4 {
+  font-size: 50px;
+  color: #fff;
+  margin: 15px 15px 0px 0;
+  text-shadow:0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;;
 }
+
 
 .btn {
-  background-color: #733ca9;
+  margin-left: 50%;
+  margin-bottom: 50%;
+  height: 60px;
+  width: 300px;
+  background-color: black;
+  box-shadow: 0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
   border-radius: 24px;
-  margin: 5px 5px 25px 5px;
   text-decoration: none;
   padding: 2px 15px;
   color: aliceblue;
-  width: fit-content;
+  font-size: 40px;
 }
 .btn:hover {
-  box-shadow: 0 0 40px #ab0bab95 inset
+  color: aliceblue;
+  background-color: rgb(30, 30, 30) ;
 }

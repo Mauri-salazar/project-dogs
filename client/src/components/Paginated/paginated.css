@@ -38,7 +38,7 @@
 }
 
 .number {
-  color: black;
+  color: rgb(255, 255, 255);
   list-style: none;
   display: flex;
   flex-grow: initial;

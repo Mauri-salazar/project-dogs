@@ -2,6 +2,7 @@ import {
   POST_CREATE_DOG ,
   GET_DOGS ,
   GET_DOGS_NAME ,
+  DOGS_BY_NAME_MESSAGE_ERROR ,
   GET_DOG_DETAIL ,
   GET_DOGS_TEMPERAMENTS,
   FILTER_DOGS_BY_TEMPERAMENT ,
@@ -14,7 +15,8 @@ const initialState = {
   dogs: [],
   AllDogs: [],
   dogDetail: {},
-  temperaments: []
+  temperaments: [],
+  errorMessage: '',
 };
 
 const RootReducer = ( state = initialState , action ) => {
@@ -30,7 +32,14 @@ const RootReducer = ( state = initialState , action ) => {
     case GET_DOGS_NAME:
       return {
         ...state,
-        dogs: action.payload
+        dogs: action.payload,
+        errorMessage: '',
+      }
+    case DOGS_BY_NAME_MESSAGE_ERROR:
+      return {
+        ...state,
+        errorMessage: 'Canino no encontrado',
+        dogs: [],
       }
 
     case GET_DOG_DETAIL:

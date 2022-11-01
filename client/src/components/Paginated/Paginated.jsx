@@ -3,10 +3,10 @@ import './paginated.css';
 
 export const Paginated = ({ DogsPage, AllDogs, paguinado }) => {
   const pageNumber = [];
-  const gamesForPage = Math.ceil(AllDogs/DogsPage);
+  const dogsForPage = Math.ceil(AllDogs/DogsPage);
 
-  for (let i = 0; i <= gamesForPage; i++) {
-    pageNumber.push(i + 1);
+  for (let i = 1 ; i <= dogsForPage; i++) {
+     pageNumber.push(i);
   }
 
   return (

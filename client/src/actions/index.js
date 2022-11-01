@@ -3,12 +3,14 @@ import axios from 'axios';
 export const POST_CREATE_DOG = 'POST_CREATE_DOG';
 export const GET_DOGS = 'GET_DOGS';
 export const GET_DOGS_NAME = 'GET_DOGS_NAME';
+export const DOGS_BY_NAME_MESSAGE_ERROR = 'DOGS_BY_NAME_MESSAGE_ERROR';
 export const GET_DOGS_TEMPERAMENTS = 'GET_DOGS_TEMPERAMENTS';
 export const GET_DOG_DETAIL = 'GET_DOG_DETAIL';
 export const FILTER_DOGS_BY_TEMPERAMENT = 'FILTER_DOGS_BY_TEMPERAMENT';
 export const FILTER_DOGS_DB = 'FILTER_DOGS_DB';
 export const ORDER_DOGS_BY_WEIGTH = 'ORDER_DOGS_BY_WEIGTH';
 export const ORDER_DOGS_BY_NAME = 'ORDER_DOGS_BY_NAME';
+
 
 
 export const postCreateDog = (payload) => {
@@ -39,9 +41,13 @@ export const getDogsName = (name) => {
         dispatch({
           type: GET_DOGS_NAME,
           payload: res.data,
-        })
+        });
       })
-      .catch( (err) => console.log(err));
+      .catch( () => {
+        dispatch({
+          type: DOGS_BY_NAME_MESSAGE_ERROR,
+        });
+      })
     }
 };
 

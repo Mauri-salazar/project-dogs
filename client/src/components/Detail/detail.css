@@ -1,20 +1,25 @@
+.icon {
+  margin-left: 50%;
+  margin-top: 400px;
+}
+
 .cont-info {
-  height: 700px;
+  height: 90vh;
   display: block;
   margin: auto;
   width: 800px;
   margin-top: 50px;
   border-radius: 15px;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 10px #e60073,
-  0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073;
+  background-color: black;
+  box-shadow: 0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
 }
-.cont-info:hover {
+/* .cont-info:hover {
   transform: scale(1.02);
-}
+} */
 
 .cont-info::after {
   content: "";
-  background: rgb(219, 215, 215);
   opacity: 0.5; top: 0; left: 0;
   bottom: 0;
   right: 0;
@@ -25,25 +30,27 @@
 
 .title {
   font-style: italic;
-  text-shadow: 0 0 10px #e60073, 0 0 20px #fff, 0 0 30px #e60073, 0 0 10px #e60073,
-  0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073;;
+  /* text-shadow: 0 0 10px #db73e6, 0 0 20px #fff, 0 0 30px #db73e6, 0 0 10px #db73e6,
+  0 0 10px #db73e6, 0 0 10px #db73e6, 0 0 10px #db73e6;; */
   margin-bottom: 0;
   padding: 20px;
+  color: rgb(219, 215, 215);
+  text-shadow:0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
 }
-.title:hover {
+/* .title:hover {
   transform: scale(1.2);
-}
+} */
 
 .cont-img{
   position: absolute;
-  margin-left: 50%;
+  margin-left: 20%;
   justify-content: center;
   align-items: center;
 }
 
 .dog-img {
-  display: block;
-  text-align: left;
+  text-align: center;
   border-radius: 30px;
   width: 350px;
   height: 450px;
@@ -57,10 +64,11 @@
   font-style: oblique;
   padding: 10px;
   display: inline;
+  color: rgb(219, 215, 215);;
 }
 
 .cont-text p {
-  color: #e60073;
+  color: rgb(219, 215, 215);
   margin-block-start: unset;
   margin-block-end: unset;
 }
@@ -93,12 +101,12 @@
   font-weight: 800;
   font-size: 20px;
   color: #ffffff;
-  background-color: burlywood;
+  background-color: #905E96;
   border-radius: 6px;
   border: 2px solid #8d7248;
 }
 
 .btn-home:hover {
   color: #3c3d15bb;
-  background-color: #f5e2a4;
+  background-color: #FF99D7;
 }

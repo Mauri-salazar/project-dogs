@@ -44,3 +44,18 @@ const  validate = (input) => {
 //errors.name === "" || errors.height_min === "" || errors.height_max === "" || errors.weight_min === ""
  //            || errors.weight_max === "" || errors.life_time_min === "" || errors.life_time_max || "" || errors.temperament === 0
 
+
+
+//  router.delete("/dogs/:name", async (req, res) => {
+//     try{
+//       const { name } = req.params;
+//     const dog = await Dog.destroy({
+//       where: { name: { [Op.like]: `%${name}%` } },
+//     });
+//     res.json(dog);
+//   }catch(error){
+//     console.log("Se presento un error en la ruta Delete /dogs/:name", error)
+//   }
+//   });
+
+//op.like operador de sequelize sirve para filtar datos y muestra solo los datos filtrados

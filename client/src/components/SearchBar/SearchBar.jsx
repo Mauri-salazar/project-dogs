@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getDogs , getDogsName } from '../../actions';
@@ -11,6 +11,7 @@ export const SearchBar = () => {
   const dispatch = useDispatch();
   const [name, setName] = useState('');
 
+
   const handleButtonClick = (e) => {
     e.preventDefault();
     dispatch(getDogs());
@@ -18,13 +19,13 @@ export const SearchBar = () => {
 
   const handleInputChange = (e) => {
     e.preventDefault();
+    console.log(e.target.value)
     setName(e.target.value);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(getDogsName(name));
-    setName('');
   }
 
   return (

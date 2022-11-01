@@ -93,7 +93,7 @@
 
 .from-conteiner .error {
   font-size: 0.7rem;
-  color: #733ca9;
+  color: #d10000;
   box-shadow: inset;
   margin-left: 5%;
   margin-bottom: 1%;
@@ -104,9 +104,10 @@
   color: aliceblue;
 }
 
-.tmp {background-color: #733ca9;
-  display: flex;
-  margin: 40px;
+.tmp {
+  color: rgb(0, 0, 0);
+  background-color: #733ca9;
+  display: inline;
 }
 
 

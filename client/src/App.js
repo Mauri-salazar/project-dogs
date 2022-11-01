@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route } from 'react-router-dom';
 import { Routes  } from 'react-router';
 
@@ -5,9 +6,9 @@ import { LandingPage } from './components/LadingPage/LadingPage';
 import { Home } from './components/Home/Home';
 import { Detail } from './components/Detail/Detail';
 import { CreateDog } from './components/CreateDog/CreateDog';
+// const Detail = lazy( () => import('./components/Detail/Detail'));
 
 
-import './App.css';
 
 function App() {
   return (

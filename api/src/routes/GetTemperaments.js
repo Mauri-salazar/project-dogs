@@ -8,7 +8,7 @@ const GetTemperaments = async (req,res) => {
     const response = temperaments.data.map( (el) => el.temperament );
     const temps = response.toString().split(',');
 
-    temps.forEach( (el) => {
+    temps.forEach( (el) => { //itera una vez x cada elem.
       const i = el.trim();
 
       Temper.findOrCreate({
@@ -19,7 +19,7 @@ const GetTemperaments = async (req,res) => {
     });
 
     const allTemperaments = await Temper.findAll();
-    return res.send(allTemperaments);
+    res.send(allTemperaments);
 
   }catch(error){
     console.log(error);
